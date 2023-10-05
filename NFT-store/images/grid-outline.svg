@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+    <rect x="48" y="48" width="140" height="140" rx="20" ry="20" fill="none" stroke="white"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+    <rect x="250" y="48" width="140" height="140" rx="20" ry="20" fill="none" stroke="white"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+    <rect x="48" y="250" width="140" height="140" rx="20" ry="20" fill="none" stroke="white"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+    <rect x="250" y="250" width="140" height="140" rx="20" ry="20" fill="none" stroke="white"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+</svg>

@@ -1,0 +1,64 @@
+@mixin btnStyle($fs) {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #BB47A6 0%, #4E6DD8 100%);
+    width: 145px;
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: $fs;
+    font-weight: 600;
+    position: relative;
+    transition: all 1s ease;
+    @content;
+
+    &:hover {
+        background: linear-gradient(90deg, #4E6DD8 0%, #BB47A6 100%);
+    }
+}
+
+@mixin ellipseStyle($size) {
+    width: $size;
+    height: $size;
+    border-radius: $size;
+    background: rgba(78, 109, 216, 0.10);
+    filter: blur(50px);
+    position: absolute;
+    @content;
+}
+
+@mixin infoStyle($fs) {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: $fs;
+    font-weight: 400;
+}
+
+
+
+@mixin borderGradient($size) {
+    background-clip: padding-box;
+    position: relative;
+    border: $size solid transparent;
+    border-radius: 15px;
+
+    &::after {
+        position: absolute;
+        top: -$size;
+        bottom: -$size;
+        left: -$size;
+        right: -$size;
+        background: linear-gradient(to top, #4561c7, #b13f9c);
+        content: '';
+        z-index: -1;
+        border-radius: 15px;
+    }
+
+    @content;
+}
+
+@mixin query($maxWidth) {
+    @media (max-width: $maxWidth) {
+        @content;
+    }
+}
