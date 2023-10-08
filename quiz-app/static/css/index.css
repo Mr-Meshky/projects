@@ -1,0 +1,30 @@
+@import url("./global.css");
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.buttons a {
+  width: 140px;
+  height: 40px;
+  font-size: 1.05rem;
+  line-height: 40px;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-3);
+  background: #fff;
+  box-shadow: 0px 1px 13px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.buttons a:hover {
+  background: var(--color-4);
+  color: #fff;
+}
