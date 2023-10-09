@@ -1,0 +1,172 @@
+@import url("./global.css");
+
+#loader {
+  display: block;
+}
+
+.loader {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-top: 8px solid var(--color-4);
+  border-left: 8px solid var(--color-4);
+  border-right: 8px solid #ff00;
+  animation: loader 0.8s infinite linear;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.questions {
+  display: none;
+  width: 700px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.header p {
+  color: #efefef;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.header span {
+  display: inline-block;
+  background: #fff;
+  width: 25px;
+  line-height: 25px;
+  height: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--color-4);
+  border-radius: 4px;
+}
+
+#question-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  background: #004a34;
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 60px 0 30px;
+  line-height: 25px;
+  direction: ltr;
+}
+
+.answer-text {
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.answer-text:hover {
+  background: #393e46;
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttons {
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.buttons button {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.05rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Poppins";
+  background: #fff;
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+
+.buttons button:hover {
+  background: var(--color-3);
+  color: #fff;
+}
+
+.correct,
+.correct:hover {
+  background: #41dba8;
+  color: #fff;
+}
+
+.incorrect,
+.incorrect:hover {
+  background: #d8426f;
+  color: #fff;
+}
+
+#error {
+  display: none;
+  margin: auto;
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: red;
+  animation: error 1s infinite;
+  transition: all 1s;
+}
+
+@keyframes error {
+  0% {
+    color: red;
+  }
+
+  100% {
+    color: blue;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 90%;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .questions {
+    width: 90%;
+  }
+
+  .answer-text {
+    font-size: 1rem;
+  }
+
+  .buttons button {
+    font-size: 1rem;
+  }
+}

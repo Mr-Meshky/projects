@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/game.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loading">
+        <span id="loader">
+          <div class="loader"></div>
+        </span>
+        <h4 id="error">Error</h4>
+      </div>
+      <div class="questions">
+        <div class="header">
+          <div>
+            <p>
+              Question No :
+              <span id="question-number">1</span>
+            </p>
+          </div>
+          <div>
+            <p>
+              Score :
+              <span id="question-score">0</span>
+            </p>
+          </div>
+        </div>
+
+        <div id="question-box">
+          <h3 id="question-text">Text Question</h3>
+          <button class="answer-text">1</button>
+          <button class="answer-text">2</button>
+          <button class="answer-text">3</button>
+          <button class="answer-text">4</button>
+        </div>
+
+        <div class="buttons">
+          <button id="next-button">Next</button>
+          <button id="finish-button">Finish</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../js/game.js"></script>
+  </body>
+</html>
