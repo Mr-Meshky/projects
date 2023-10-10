@@ -1,0 +1,101 @@
+@import url(./global.css);
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 25px;
+}
+
+button {
+  font-family: "Poppins";
+}
+
+.buttons * {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.05rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background: #fff;
+  color: var(--color-4);
+  margin-left: 15px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.buttons *:hover {
+  background: var(--color-4);
+  color: #fff;
+}
+
+.input-style {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #555;
+  font-family: "Poppins";
+  outline: none;
+  width: 90%;
+  max-width: 260px;
+}
+
+.input-style:focus {
+  border-color: var(--color-4);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#score {
+  display: inline-block;
+  width: 70px;
+  line-height: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #fff;
+  background: var(--color-4);
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+
+#modal {
+  background-color: rgba(128, 128, 128, 0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal > div {
+  background: var(--color-1);
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#modal span {
+  background-color: var(--color-2);
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#modal p {
+  margin-top: 40px;
+  color: #fff;
+}
