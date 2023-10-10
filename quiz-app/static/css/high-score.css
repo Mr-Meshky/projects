@@ -1,0 +1,75 @@
+@import url(./global.css);
+
+* {
+  transition: all 0.2s ease-in;
+}
+
+.container {
+  height: auto;
+  padding: 40px;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+ol {
+  width: 80%;
+  max-width: 400px;
+}
+
+ol li {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+ol li span {
+  display: inline-block;
+  background: var(--color-3);
+  width: auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 4px;
+}
+
+ol li span:first-child {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  margin-left: 2px;
+  background: var(--color-4);
+}
+
+a {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background: #fff;
+  color: var(--color-4);
+  transition: all 0.3s;
+}
+
+a:hover {
+  background: var(--color-4);
+  color: #fff;
+}
+
+@media (max-width: 425px) {
+  ol li {
+    font-size: 1rem;
+  }
+}
