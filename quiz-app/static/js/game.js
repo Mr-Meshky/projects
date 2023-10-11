@@ -45,20 +45,24 @@ async function fetchData() {
 }
 
 const start = () => {
+  loader.style.display = "block";
+  container.style.display = "none";
   showQuestion();
 };
 
-const showQuestion = async () => {
-  questionNumber.innerText = questionIndex + 1;
-  const { question, answers, correctAnswerIndex } =
-    formattedData[questionIndex];
-  correctAnswer = correctAnswerIndex;
-  questionText.innerText = await question;
-  answerList.forEach(async (button, index) => {
-    button.innerText = await answers[index];
-  });
-  loader.style.display = "none";
-  container.style.display = "block";
+const showQuestion = () => {
+  setTimeout(async () => {
+    questionNumber.innerText = questionIndex + 1;
+    const { question, answers, correctAnswerIndex } =
+      formattedData[questionIndex];
+    correctAnswer = correctAnswerIndex;
+    questionText.innerText = await question;
+    answerList.forEach(async (button, index) => {
+      button.innerText = await answers[index];
+    });
+    loader.style.display = "none";
+    container.style.display = "block";
+  }, 300);
 };
 
 const checkAnswer = (event, index) => {
@@ -79,8 +83,6 @@ const nextHandler = () => {
   if (questionIndex < formattedData.length - 1) {
     questionIndex++;
     isAccepted = true;
-    loader.style.display = "block";
-    container.style.display = "none";
     removeClasses();
     start();
   } else {
