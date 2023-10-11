@@ -1,0 +1,47 @@
+@import url(./global.css);
+
+* {
+  transition: all 0.2s ease-in;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: none;
+  color: var(--color-3);
+  cursor: pointer;
+  font-weight: 700;
+  background: #fff;
+  transition: all 0.3s;
+}
+
+a:hover,
+button:hover {
+  background: var(--color-4);
+  color: #fff;
+}
+
+.home {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.05rem;
+  border-radius: 6px;
+  color: var(--color-4);
+  font-weight: 700;
+  background: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
