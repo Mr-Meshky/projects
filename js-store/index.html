@@ -8,8 +8,87 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <header>
+      <h3>MrMeshky Store</h3>
+      <div>
+        <a href="auth.html" id="login">
+          Login
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+        <a href="dashboard.html" id="dashboard">
+          Dashboard
+          <i class="fa-solid fa-house"></i>
+        </a>
+      </div>
+    </header>
+
+    <div id="search">
+      <h1>Shop</h1>
+      <input type="text" placeholder="Search product..." id="search-input" />
+      <button id="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <div id="container">
+      <div id="products"><span id="loader"></span></div>
+      <div id="filter">
+        <article>
+          <div>
+            <i class="fa-solid fa-sliders"></i>
+            <p>Categories</p>
+          </div>
+          <ul>
+            <li class="selected li">All</li>
+            <li class="li">Electronics</li>
+            <li class="li">Jewelery</li>
+            <li class="li">Men's Clothing</li>
+            <li class="li">Women's Clothing</li>
+          </ul>
+        </article>
+        <article class="price-range">
+          <div>
+            <i class="fa-solid fa-tags"></i>
+            <p>Price range</p>
+          </div>
+
+          <div class="price-content">
+            <div>
+              <label>Min</label>
+              <p id="min-value">$0</p>
+            </div>
+
+            <div>
+              <label>Max</label>
+              <p id="max-value">$1500</p>
+            </div>
+          </div>
+
+          <div class="range-slider">
+            <input
+              type="range"
+              class="min-price price-input"
+              value="0"
+              min="0"
+              max="1500"
+              step="5"
+            />
+            <input
+              type="range"
+              class="max-price price-input"
+              value="1500"
+              min="0"
+              max="1500"
+              step="5"
+            />
+          </div>
+        </article>
+      </div>
+    </div>
+
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
