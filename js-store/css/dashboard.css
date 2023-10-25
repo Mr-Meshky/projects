@@ -1,0 +1,173 @@
+@import url("./global.css");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+header h3 {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+}
+
+header a,
+header button {
+  color: #000;
+  text-decoration: none;
+  background: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.1s ease-in;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+header button {
+  color: var(--color-error);
+}
+
+header i {
+  margin-left: 10px;
+}
+
+header a:hover,
+header button:hover {
+  color: #fff;
+  background: #000;
+}
+
+h1 {
+  margin: 50px 0 40px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#container h2 {
+  padding: 200px;
+  margin: auto;
+  color: var(--color-error);
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 10px;
+  list-style-type: none;
+  width: 270px;
+  padding: 7px;
+  background-color: #fff;
+}
+
+#card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 270px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#card > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+#card .info-product {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 7px;
+  text-align: left;
+}
+
+#card h3 {
+  color: var(--color-warning);
+}
+
+#card i {
+  margin-right: 2px;
+}
+
+#card .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+}
+
+#card .buttons p {
+  margin-bottom: 0;
+  display: inline;
+  font-weight: 800 !important;
+}
+
+#card button {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--color-primary);
+  transition: all 0.1s ease-in;
+}
+
+#card #remove {
+  color: var(--color-error);
+  background: var(--color-secondary);
+}
+
+#card #remove:hover {
+  background: #000;
+  color: #fff;
+}
+
+#card .number-btn {
+  width: 40px;
+  font-size: 1.3rem;
+  margin-left: 3px;
+}
+
+#card button:hover {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.total {
+  background: var(--color-primary);
+  border-radius: 6px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  margin: 40px 0 40px;
+}
+
+.total p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+}

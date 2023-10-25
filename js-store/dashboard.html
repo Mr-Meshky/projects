@@ -8,8 +8,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="./css/dashboard.css" />
   </head>
   <body>
+    <header>
+      <h3>MrMeshky Store</h3>
+      <div>
+        <a href="./index.html">Home <i class="fa-solid fa-house"></i></a>
+        <button>
+          Logout
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+      </div>
+    </header>
+
+    <h1>Cart</h1>
+    <main>
+      <ul id="container">
+        <h2>Your shopping cart is empty</h2>
+      </ul>
+      <div class="total">
+        <p>Total Price: <span id="total-price">$ 0</span></p>
+      </div>
+    </main>
+
     <script type="module" src="./js/dashboard.js"></script>
   </body>
 </html>
