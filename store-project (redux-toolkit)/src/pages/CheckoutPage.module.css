@@ -1,0 +1,41 @@
+.emty {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  min-height: 500px;
+}
+
+.emty h1 {
+  color: #797fa9;
+}
+
+.emty a {
+  background: #435585;
+  color: #fff;
+  border-radius: 15px;
+  padding: 15px 30px;
+  line-height: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  min-height: 70vh;
+}
+
+.prodcuts {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+  }
+}
