@@ -1,6 +1,6 @@
 # Store project React.js
 
-Single page application (store project )
+Single page application - Context - Reducer (store project)
 
 ### Show products from api
 
