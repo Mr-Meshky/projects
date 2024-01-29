@@ -30,6 +30,9 @@ function CommentForm({ slug }) {
 
   if (data && pressed) {
     toast.success("کامنت ارسال شد و منتظر تایید می باشد");
+    setName("");
+    setEmail("");
+    setText("");
     setPressed(false);
   }
 
