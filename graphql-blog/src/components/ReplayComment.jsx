@@ -7,10 +7,10 @@ function ReplayComment({ text, avatar, name }) {
       xs={12}
       m={2}
       p={2}
-      mr={7}
+      ml={7}
       borderRadius={1}
-      bgcolor="#545454"
-      sx={{ transform: "translateY(-6px)" }}
+      bgcolor="#757575"
+      sx={{ transform: "translateY(-5px)" }}
     >
       <Box component="div" display="flex" alignItems="center" mb={3}>
         <Avatar src={avatar} />

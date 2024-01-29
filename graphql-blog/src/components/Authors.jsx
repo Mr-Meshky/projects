@@ -31,7 +31,7 @@ function Authors() {
                 alignItems: "center",
               }}
             >
-              <Avatar src={author.avatar.url} sx={{ marginLeft: 3 }} />
+              <Avatar src={author.avatar.url} sx={{ marginRight: 3 }} />
               <Typography component="p" variant="p" color="text.secondary">
                 {author.name}
               </Typography>

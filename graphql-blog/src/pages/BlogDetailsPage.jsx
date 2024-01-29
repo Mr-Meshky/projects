@@ -63,7 +63,7 @@ function BlogDetailsPage() {
         <Grid item xs={12} mt={7} display="flex" alignItems="center">
           <Avatar
             src={author.avatar.url}
-            sx={{ width: 80, height: 80, marginLeft: 2 }}
+            sx={{ width: 80, height: 80, marginRight: 2 }}
           />
           <Box component="div">
             <Typography component="p" variant="h5" fontWeight="700">
